@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Colombo</title>
+    <link rel="icon"  href="images/logo.png">
+    <link rel="stylesheet" href="colombo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--nav bar start-->
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo.png" width="100" alt="logo">
+    </div>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sitemap,html">Sitemap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buyproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Contact us</a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+  <!--navbar end-->
+    <main>
+      <section id="hero">
+        <h1>Discover Colombo</h1>
+        <p>Experience Sri Lanka's Commercial Capital</p>
+      </section>
+      
+      <section id="about">
+        <div class="container">
+          <h2>About Colombo</h2>
+          <p>Colombo is the commercial capital of Sri Lanka and a vibrant city that combines modern architecture with colonial buildings and historical landmarks. The city is also known for its delicious cuisine, bustling markets, and scenic coastline.</p>
+        </div>
+      </section>
+      
+      <section id="attractions">
+  <div class="container">
+    <h2>Top Attractions</h2>
+    <ul>
+      <li class="attraction attraction1">
+        <h3>The National Museum</h3>
+        <p>The National Museum is a must-visit for anyone interested in the rich history and culture of Sri Lanka. The museum features a wide range of exhibits, including ancient artifacts, royal regalia, and colonial-era memorabilia.</p>
+      </li>
+      <li class="attraction attraction2">
+        <h3>Gangaramaya Temple</h3>
+        <p>Gangaramaya Temple is a fascinating blend of traditional and modern architecture and is home to an impressive collection of Buddhist art and artifacts. Visitors can also explore the temple's peaceful gardens and observe daily rituals and ceremonies.</p>
+      </li>
+      <li class="attraction attraction3">
+        <h3>Beira Lake</h3>
+        <p>Beira Lake is a tranquil oasis in the heart of the city and is a popular spot for picnics, boat rides, and bird watching. Visitors can also explore the nearby Seema Malaka Temple, which is situated on a small island in the middle of the lake.</p>
+      </li>
+      <li class="attraction attraction4">
+        <h3>Galle Face Green</h3>
+        <p>Galle Face Green is a sprawling park and promenade that runs along the coastline of Colombo. It's a popular spot for jogging, kite flying, and enjoying street food from the vendors that line the edge of the park.</p>
+      </li>
+    </ul>
+
+  </div>
+</section>
+      
+      <section id="tours">
+        <div class="container">
+          <h2>Tours</h2>
+          <p>Experience the best of Colombo with our guided tours. We offer walking tours, food tours, and sightseeing tours that will take you to the city's most iconic landmarks and hidden gems. Contact us to book your tour today!</p>
+          
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+
+        <div class="right">
+          <button class="btn3" onclick="viewProfile();">View Editor</button>
+        </div>
+        <!--footer start-->
+  <footer>
+    <div class="footer-content">
+      <h3>EXPLORE SERENDIB</h3>
+      <img src="images/logo.png" width="100" alt="explore serendib logo">
+      <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes.</p>
+      <ul class="socials">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 Explore Serendib. designed by <span>ASHINTHA</span></p>
+    </div>
+    </footer>
+    <!--footer end-->
+      </section>
+    </main>
+    <script>
+      function viewProfile(){
+              window.location = "ashintha.html"
+      }
+  </script>
+  </body>
+</html>

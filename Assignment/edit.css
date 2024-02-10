@@ -1,0 +1,83 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-image: url("Images/background.png");
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.proBackground
+{
+    margin-top: 20px;
+    height: 500px;
+    background-color: Cyan;
+    background-image: linear-gradient(to right, #7370FE, #7DF9FF);
+}
+
+.Base
+{
+    position: absolute;
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 190px 0px 0px 310px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.propic
+{
+    float: left;
+    position: relative;
+    margin: 20px 20px 10px 20px;
+    width: 450px;
+    height: 510px;
+    border-radius: 8px;
+}
+
+.proDescription
+{
+    position: relative;
+    margin: 50px 20px 50px 510px;
+    width: 350px;
+    height: 450px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.Name
+{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.Title
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.Text
+{
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.taskLi
+{
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.proicons
+{
+    margin: 0px 30px 5px 70px;
+    font-weight: normal;
+    word-spacing: 20px;
+    float: left;
+    clear: right;
+}

@@ -1,0 +1,387 @@
+* {
+  
+  margin-top: 0;
+  padding: 0;
+}
+body{
+  background-repeat: no-repeat;
+  margin: 0%;
+  padding: 0%;
+  background-color: #fffef2;
+    }
+    .navbar-a{
+      padding-left: 60px;
+    }
+.header {
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+    background-color: #003060;
+    z-index: 200;
+    box-shadow: 1px 1px 1px 1px #eee;
+    position: fixed;
+  }
+  
+  .header ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .header ul li a {
+    padding: 15px 20px;
+    font-weight: 500;
+    font-family: Cambria;
+    font-size: large;
+  }
+
+  .header ul li {
+    list-style-type: none;
+  }
+  
+  .header ul a {
+      text-decoration: none;
+      color: white;
+  }
+  
+  .header ul a:hover {
+    color: rgb(141, 141, 141);
+    transition: all 0.5s;
+  }
+
+/* Styles for the main search bar */
+#main-search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#main-search-bar input[type="text"] {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 20%;
+}
+
+#icon-search {
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  margin-left: -50px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#icon-search i {
+  color: gray;
+  font-size: 18px;
+}
+
+/* Styles for the destination section */
+#destination {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px 0;
+  font-family: "Kanit", sans-serif;
+}
+
+.dest {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dest > div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.dest > div:hover {
+  transform: translateY(-10px);
+}
+
+.dest > div img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dest > div p {
+  margin: 20px 0;
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+}
+
+.add-button {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+}
+
+.buynow-button {
+  background-color: #F9A826;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.buynow-button:hover {
+  background-color: #f39c12;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Cart styling */
+.cart {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart h3 {
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cart p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Bill styling */
+h1 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.prices {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Form styling */
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form li {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #777;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f5f5f5;
+  color: #777;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button#place {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button#place:hover {
+  background-color: #333;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+.body{
+
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background: blanchedalmond;
+}
+footer{
+  margin-top: 0%;
+  position: sticky;
+  top: 0%;
+  background: #003060;
+  height: auto;
+  width: 100vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top:0%;
+  color: antiquewhite;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1px;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+
+}
+.socials a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+.footer-bottom{
+  background:#000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: 4;
+  font-weight: 200;
+}
+
+.btn3{
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  height: 30px;
+  width: 140px;
+  font-family: Roboto;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(140,50,49,0.7);
+}
+.btn3:hover{
+  background-color: orange;
+  border: 3px dashed lightcoral;
+}
+
+.right{
+text-align: right;
+}

@@ -1,0 +1,513 @@
+.quiz{
+    width: 100%;
+    height: 130%;
+    background-image: url("images/waterfall.jpg");
+    background-color: lightgrey;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin-top: -110px;
+    position: absolute;
+    background-blend-mode: overlay;
+}
+.quiz h1 {
+    position: absolute;
+    top:20%;
+    font-weight: bolder;
+    transform: translateY(-50px);
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-right: 250px;
+    padding: 0;
+    text-align: center;
+    font-size: 100px;
+    color: rgba(400,0,150,0.3);
+    text-transform: uppercase;
+    text-shadow: 0 5px rgba(0,0,5,0.6);
+}
+.start_button,
+.info_box,
+.quiz_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+.info_box{
+    font-family: Arial;
+}
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.start_button button{
+    margin-top: 100px;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    color: blue;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: rgba(120,310,210,0.5);
+    cursor:pointer;
+}
+.start_button button:hover{
+    background-color: darkkhaki;
+    color: red;
+    border:4px dashed green;
+}
+.info_box{
+    width: 540px;
+    background: darksalmon;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.info_box .info_title{
+    height: 60px;
+    width: 470px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_box .info_list{
+    padding: 15px 35px;
+}
+.info_box .info_list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.info_box .info_list .info span{
+    font-weight: 600;
+    color: red;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 2px solid lightgrey;
+}
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.buttons button.quit{
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+}
+.buttons button.quit:hover{
+    color: white;
+    background: deepskyblue;
+}
+.buttons button.restart{
+    background: deepskyblue;
+    border: 2px solid white;
+}
+.buttons button.restart:hover{
+    background: blue;
+}
+.quiz_box{
+    width: 550px;
+    background: lightblue;
+    border-radius: 5px;
+    font-family: Arial;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.quiz_box header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+}
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0,140,150,210);
+}
+.quiz_box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    background: lightgreen;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.quiz_box header .timer .time_text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    background: black;
+    color: white;
+    width: 45px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    border:1px solid black;
+    user-select: none;
+}
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 4px;
+    background: rgba(0,120,100,0.7);
+}
+.quiz_box .question_part{
+    padding: 25px 30px 20px 30px;
+    background: lightblue;
+}
+.quiz_box .question_part .question_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+.quiz_box .question_part .option_list{
+    padding: 20px 0;
+    display: block;
+}
+.question_part .option_list .option{
+    background: aliceblue;
+    border: 1px solid deepskyblue;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.question_part .option_list .option:hover{
+    color: blue;
+    background-color: lightskyblue;
+    border-color: lightsteelblue;
+}
+.option_list .option:last-child{
+    margin-bottom: 0px;
+}
+.option_list .option .icon{
+    font-weight: bold;
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    pointer-events: none;
+}
+.option_list .option .icon.tick{
+    color: green;
+    border-color: green;
+    background-color: lightgreen;
+}
+.option_list .option .icon.cross{
+    color: red;
+    border-color: red;
+    background-color: lightpink;
+}
+.option_list .option.correct{
+    color: green;
+    border-color: green;
+    background-color: lightgreen;
+}
+.option_list .option.incorrect{
+    color: red;
+    border-color: red;
+    background-color: lightpink;
+}
+.option_list .option.disabled{
+    pointer-events: none;
+}
+.quiz_box footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: chartreuse;
+}
+.quiz_box footer .total_que span{
+    display: flex;
+    user-select: none;
+    color: darkgoldenrod;
+}
+.quiz_box footer .total_que span b{
+    padding: 0 5px;
+}
+.total_que span b:first-child{
+    padding-left:0;
+}
+footer .next_btn{
+    height: 40px;
+    padding:0 13px;
+    font-size: 18px;
+    outline: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    border:1px solid deepskyblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+footer .next_btn:hover{
+    background-color: darkblue;
+
+}
+.icon img{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.result_box{
+    background-color:lightgreen ;
+    width: 450px;
+    padding:25px 30px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.result_box .score_text p{
+    display: flex;
+    margin:10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.score_text p #marks{
+    padding: 0 4px;
+}
+.result_box .buttons{
+    margin: 20px 0;
+}
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+* {
+
+    margin-top: 0;
+    padding: 0;
+}
+body{
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    background-color: #fffef2;
+}
+.navbar-a{
+    padding-left: 60px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+    background-color: #003060;
+    z-index: 200;
+    box-shadow: 1px 1px 1px 1px #eee;
+    position: fixed;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100px;
+}
+.header ul li a {
+    padding: 15px 20px;
+    font-weight: 500;
+    font-family: Cambria;
+    font-size: large;
+}
+.header ul li{
+    list-style-type: none;
+}
+.header ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.header ul a:hover {
+    color: rgb(141, 141, 141);
+    transition: all 0.5s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.body{
+
+    position: absolute;
+    margin: 0;
+    min-height: 100%;
+    background: blanchedalmond;
+}
+.footer{
+    margin-top:745px;
+    margin-bottom: -40px;
+    position: absolute;
+}
+footer{
+    margin-top: 0%;
+    position: relative;
+    top: 0%;
+
+    background: #003060;
+    height: auto;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:0%;
+    color: antiquewhite;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+
+}
+.socials a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i {
+    color: aqua;
+}
+.footer-bottom{
+    background:#000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 4;
+    font-weight: 200;
+}
+
+
+.btn4{
+    margin-top: 670px;
+    margin-left: 1290px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 140px;
+    font-family: Roboto;
+    display: inline-block;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(140,50,49,0.7);
+  }
+  .btn4:hover{
+    background-color: orange;
+    border: 3px dashed lightcoral;
+  }
+

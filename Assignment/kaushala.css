@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url("images/gangaramaya.jpg");
+    background-size: cover;
+}
+
+.profileBackground
+{
+    margin-top: 20px;
+    height: 500px;
+    background-color: Cyan;
+    background-image: url("images/banner4.jpg");
+    background-size: cover;
+}
+
+.profileBase
+{
+    position: absolute;
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 190px 0px 0px 310px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.profilePhoto
+{
+    float: left;
+    position: relative;
+    margin: 20px 20px 10px 20px;
+    width: 450px;
+    height: 510px;
+    border-radius: 8px;
+}
+
+.profileDescription
+{
+    position: relative;
+    margin: 50px 20px 50px 510px;
+    width: 350px;
+    height: 450px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.profileHeading
+{
+    font-size: 40px;
+    color: white;
+    padding-top: 20px;
+    margin: 0px 0px 0px 200px;
+    font-weight: bold;
+}
+
+
+
+.profileName
+{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.profileTitle
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.profileText
+{
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.taskList
+{
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.profileIcons
+{
+    margin: 0px 30px 5px 70px;
+    font-weight: normal;
+    word-spacing: 20px;
+    float: left;
+    clear: right;
+}
+
+

@@ -1,0 +1,319 @@
+a .nav-item{
+    border: none;
+    border-bottom: 4px solid black;
+}
+.particle{
+    height:90vh;
+    z-index: -1;
+    top: 100px;
+}
+#particles-js{
+    width: 100%;
+    height: 70%;
+    top:750px;
+    background-image: url("images/nine-arch.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    position: absolute;
+    background-color:lightgray;
+    background-blend-mode: overlay;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.name-heading {
+    font-size: larger;
+    color: red;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+p {
+    color: blue;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.info-main{
+    display: inline;
+    margin-left: 250px;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 40px;
+}
+
+.card-wrapper {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background-color: rgba(200,292,192, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.card-wrapper:hover {
+    height: 350px;
+    width: 350px;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(2px);
+}
+.card-wrapper:hover .user-pic {
+    height: 240px;
+    width: 250px;
+    transition: 0.5s;
+}
+.user-pic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.user-pic img {
+    height: 100%;
+    display: block;
+    margin-left:8%;
+}
+.name {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    transition: 0.5s;
+}
+.card-wrapper:hover .name {
+    top: 200px;
+}
+.social-details {
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-wrapper:hover .social-details {
+    opacity: 1;
+    position: relative;
+    top: 200px;
+}
+.cont-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 410px;
+}
+.cont-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 780px;
+}
+.cont-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -80px;
+    margin-left:  1160px;
+}
+.header1{
+    width:100%;
+    height:950px;
+    background-image:url("images/background2.JPG");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: lightgray;
+    margin-bottom: 100px;
+    z-index: -1;
+    background-blend-mode: overlay;
+}
+.header1 h1{
+    position: absolute;
+    top:20%;
+    font-weight: 300;
+    transform: translateY(-50px);
+    margin-top: 120px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 0;
+    text-align: center;
+    font-family: Algerian;
+    font-size: 120px;
+    color: rgba(400,0,150,0.3);
+    text-transform: uppercase;
+    text-shadow: 0 5px rgba(0,0,5,0.6);
+}
+.button-36{
+    margin-top: -500px;
+    margin-left:  1290px;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 140px;
+    font-family: Roboto;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(140,50,49,0.7);
+}
+.button-36:hover{
+    background-color: orange;
+    border: 3px dashed lightcoral;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.body{
+
+    position: absolute;
+    margin: 0;
+    min-height: 100%;
+    background: blanchedalmond;
+}
+.footer{
+    margin-bottom: -40px;
+    position: absolute;
+    top: 490px;
+}
+footer{
+    margin-top: 0%;
+    position: relative;
+    top: 0%;
+
+    background: #003060;
+    height: auto;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:0%;
+    color: antiquewhite;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+
+}
+.socials a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i {
+    color: aqua;
+}
+.footer-bottom{
+    background:#000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 4;
+    font-weight: 200;
+}
+
+.btn3{
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 140px;
+    font-family: Roboto;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(140,50,49,0.7);
+  }
+  .btn3:hover{
+    background-color: orange;
+    border: 3px dashed lightcoral;
+  }
+
+  .right{
+  text-align: right;
+  }
+.header ul a:hover {
+    border-bottom: 2px solid #fff;
+    color: rgb(141, 141, 141);
+    transition: all 0.5s;
+}

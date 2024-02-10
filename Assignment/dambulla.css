@@ -1,0 +1,352 @@
+* {
+  
+  margin-top: 0;
+  padding: 0;
+}
+body{
+  background-repeat: no-repeat;
+  margin: 0%;
+  padding: 0%;
+  background-color: #fffef2;
+    }
+    .navbar-a{
+      padding-left: 60px;
+    }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+    background-color: #003060;
+    z-index: 200;
+    box-shadow: 1px 1px 1px 1px #eee;
+    position: fixed;
+  }
+  
+  .header ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .header ul a li {
+    list-style-type: none;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-family: Cambria;
+    font-size: large;
+  }
+  
+  .header ul a {
+      text-decoration: none;
+      color: white;
+  }
+  
+  .header ul a:hover {
+    color: rgb(141, 141, 141);
+    transition: all 0.5s;
+  }
+
+  /* styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* hero section */
+#hero {
+  height: 83vh;
+  background-image: url('images/dambulla1.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 6rem;
+  margin-bottom: 18rem;
+  margin-top: -10rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-top: -18rem;
+  font-weight: bolder;
+}
+
+/* container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* top attractions section */
+#attractions {
+  background-color: #f7f7f7;
+  padding: 4rem 0;
+}
+
+#attractions ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#attractions li {
+  width: calc(200% - 1rem);
+  margin: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#attractions li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#attractions li h3 {
+  margin: 0;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* attraction images */
+.attraction1 {
+  background-image: url('images/rangiri.jpg');
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+  width: 200%;
+}
+
+.attraction2 {
+  background-image: url('images/sigiriya.avif');
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.attraction3 {
+  background-image: url('images/minneriyaNationalPark.jpg');
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.attraction4 {
+  background-image: url('images/ibbankatuwa.jpg');
+  height: 30rem;
+  background-position: center;
+  background-size: cover;
+}
+
+/* attraction descriptions */
+.attraction p {
+  display: none;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  text-align: center;
+}
+
+.attraction:hover p {
+  display: block;
+}
+
+/* form container */
+#contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* form heading */
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* form label */
+#contact label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* form input and textarea */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+}
+
+#contact textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* form button */
+#contact .btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#contact .btn:hover {
+  background-color: #222;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+.body{
+
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background: blanchedalmond;
+}
+footer{
+  margin-top: 0%;
+  position: sticky;
+  top: 0%;
+  background: #003060;
+  height: auto;
+  width: 100vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top:0%;
+  color: antiquewhite;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1px;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+
+}
+.socials a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+.footer-bottom{
+  background:#000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: 4;
+  font-weight: 200;
+}
+
+.btn3{
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  height: 30px;
+  width: 140px;
+  font-family: Roboto;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(140,50,49,0.7);
+}
+.btn3:hover{
+  background-color: orange;
+  border: 3px dashed lightcoral;
+}
+
+.right{
+text-align: right;
+}

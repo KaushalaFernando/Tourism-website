@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	    <meta charset="UTF-8">
+
+<title>How did we Do?</title>
+<link rel="icon" href="images/logo.png" >
+<link rel="stylesheet" type="text/CSS" href="home.css">
+<link rel="stylesheet" type="text/CSS" href="CommentsForm.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="footer.css">
+
+</head>
+<body class="bodyBackground2">
+    <br><br>
+    <h1 style="color: rgb(34, 116, 111);">How did we Do?</h1><br><br>
+<form id="myForm" action="mailto:chamin.20220111@iit.ac.lk?subject=myform_submission" enctype="text/plain" method="get" >
+<fieldset>
+    <p>How satisfied were you with our website today? Choose from 0 to 10 ( 0 is extreamly dissatisfied and 10 is extreamly satisfied )</p><br>
+    <div class="center">
+    <label for="0">0</label> 
+    <label for="1">1</label> 
+    <label for="2">2</label> 
+    <label for="3">3</label> 
+    <label for="4">4</label> 
+    <label for="5">5</label> 
+    <label for="6">6</label> 
+    <label for="7">7</label>
+    <label for="8">8</label>
+    <label for="9">9</label>
+    <label for="10">10</label>
+<br>
+    <input type="radio" name="satisfactionRating" id="0" value="0" >
+    <input type="radio" name="satisfactionRating" id="1" value="1" >
+    <input type="radio" name="satisfactionRating" id="2" value="2" >
+    <input type="radio" name="satisfactionRating" id="3" value="3" >
+    <input type="radio" name="satisfactionRating" id="4" value="4" >
+    <input type="radio" name="satisfactionRating" id="5" value="5" >
+    <input type="radio" name="satisfactionRating" id="6" value="6" >
+    <input type="radio" name="satisfactionRating" id="7" value="7" >
+    <input type="radio" name="satisfactionRating" id="8" value="8" >
+    <input type="radio" name="satisfactionRating" id="9" value="9" required checked>
+    <input type="radio" name="satisfactionRating" id="10" value="10" >
+    <br><br><br>
+    </div>
+</fieldset>
+<fieldset>
+        <p>Please could you tell us your reasons for giving this rating?</p>
+    <input type="text" id="ratingReason" name="ratingReason" placeholder="Please Use this space..." required >
+    <br><br>
+</fieldset>
+<fieldset>    
+    <p> How did you want to complete this task today? (optional)</p>
+    <select name="Mode" id="Mode">
+        <option value="" selected> --Please Select-- </option>
+        <option value="Phone">Phone</option>
+        <option value="Website">Website</option>
+        <option value="Webchat">Webchat</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Email">Email</option>
+    </select><br><br>
+</fieldset>
+<fieldset>
+        <p>If you had to complete this task again, How would you prefer to do it? (optional)</p>
+    <select name="NewMode" id="NewMode">
+        <option value="" selected > --Please Select-- </option>
+        <option value="Phone">Phone</option>
+        <option value="Website">Website</option>
+        <option value="Webchat">Webchat</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Email">Email</option>
+    </select><br><br><br><br>
+</fieldset>
+
+<fieldset>
+        <p>Any suggestions on how we could improve?</p>
+    <input type="text" id="suggestions" name="suggestions" placeholder="Type your suggestions here...">
+</fieldset><br><br><br><br><br>
+
+<div class="center">
+    <input type="submit" value="submit" class="btn1" >
+</div>
+<br><br>
+
+</form>
+<br><br><br>
+<div class="right">
+    <button class="btn3" onclick="viewProfile();">View Editor</button>
+</div>
+
+<!--footer start-->
+<footer>
+    <div class="footer-content">
+      <h3>EXPLORE SERENDIB</h3>
+      <img src="images/logo.png" width="100" alt="">
+      <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes.</p>
+      <ul class="socials">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 Explore Serendib. designed by <span>CHAMIN</span></p>
+    </div>
+    </footer>
+    <!--footer end-->
+
+    
+    <script>
+        function viewProfile(){
+                window.location = "chamin.html"
+        }
+    </script>
+    <script> src="form.js" </script>
+
+
+</body>
+
+</html>

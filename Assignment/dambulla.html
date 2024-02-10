@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dambulla</title>
+    <link rel="icon"  href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" href="dambulla.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--nav bar start-->
+  <div class="header">
+    <div class="logo">
+      <img src="images/logo.png" width="100" alt="logo">
+    </div>
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sitemap.html">Sitemap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="buyproducts.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+  <!--navbar end-->
+    <main>
+      <section id="hero">
+        <h1>Discover Dambulla</h1>
+        <p>The City with a greater History</p>
+        
+      </section>
+        
+      <section id="about">
+        <div class="container">
+          <h2>About Dambulla</h2>
+          <p>Dambulla is a town situated in the north of Matale District, Central Province of Sri Lanka. It is the second largest populated and urbanised centre after Matale in the Matale District. It is situated 148 km north-east of Colombo, 43 km north of Matale and 72 km north of Kandy.</p>
+        </div>
+      </section>
+      
+      <section id="attractions">
+  <div class="container">
+    <h2>Top Attractions</h2>
+    <ul>
+      <li class="attraction attraction1">
+        <h3>Rangiri Dambulla Cave Temple</h3>
+        <p>A sacred pilgrimage site for 22 centuries, this cave monastery, with its five sanctuaries, is the largest, best-preserved cave-temple complex in Sri Lanka. The Buddhist mural paintings (covering an area of 2,100 m2 ) are of particular importance, as are the 157 statues.</p>
+      </li>
+      <li class="attraction attraction2">
+        <h3>Sigiriya</h3>
+        <p>Sigiriya or Sinhagiri is an ancient rock fortress located in the northern Matale District near the town of Dambulla in the Central Province, Sri Lanka. It is a site of historical and archaeological significance that is dominated by a massive column of granite rock approximately 180 m high.</p>
+      </li>
+      <li class="attraction attraction3">
+        <h3>Minneriya National Park</h3>
+        <p>The area was designated as a national park on 12 August 1997, having been originally declared as a wildlife sanctuary in 1938. The reason for declaring the area as protected is to protect the catchment of Minneriya tank and the wildlife of the surrounding area.</p>
+      </li>
+      <li class="attraction attraction4">
+        <h3>Ibbankatuwa Megalithic Tombs</h3>
+        <p>The Ibbankatuwa Megalithic Tombs is an ancient burial site located near Ibbankatuwa Wewa in Galewela DS, Sri Lanka. The site is thought to belong to the megalithic prehistoric and protohistoric periods of Sri Lanka and is considered one of the several ancient burial sites that have been found in the country.</p>
+      </li>
+      </li>
+    </ul>
+
+  </div>
+</section>
+      
+      <section id="tours">
+        <div class="container">
+          <h2>Tours</h2>
+          <p>Experience the best of Dambulla with our guided tours. We offer walking tours, and sightseeing tours that will take you to the city's most iconic landmarks and hidden gems making your stay feel like paradise. Contact us to book your tour today!</p>
+          
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+        
+        <div class="right">
+          <button class="btn3" onclick="viewProfile();">View Editor</button>
+        </div>
+
+        <!--footer start-->
+  <footer>
+    <div class="footer-content">
+      <h3>EXPLORE SERENDIB</h3>
+      <img src="images/logo.png" width="100px">
+      <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes.</p>
+      <ul class="socials">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2022 Explore Serendib. designed by <span>CHAMIN</span></p>
+    </div>
+    </footer>
+    <!--footer end-->
+      </section>
+    </main>
+    <script>
+      function viewProfile(){
+            window.location = "chamin.html"
+      }
+    </script>
+  </body>
+</html>

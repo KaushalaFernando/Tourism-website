@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="iE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-nav ">
+                    <li class="nav-link" ><a class="nav-item" href="home.html">Home</a></li>
+                    <li class="nav-link" ><a class="nav-item" href="gallery.html">Gallery</a></li>
+                    <li class="nav-link" ><a class="nav-item" href="sitemap.html">Site Map</a></li>
+                    <li class="nav-link" ><a class="nav-item" href="buyproducts.html">Buy Products</a></li>
+                    <li class="nav-link" ><a class="nav-item" href="about.html">Contact us </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="quiz">
+        <h1>Welcome to Explore serendib</h1>
+    </div>
+    <div class="start_button"><button>Attempt for Quiz</button></div>
+    <div class="info_box">
+        <div class="info_title"><span>Please follow these instructions below:</span></div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>10 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">EXIT QUIZ</button>
+            <button class="restart">CONTINUE</button>
+        </div>
+    </div>
+    <!--Quiz box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Travellers' Quiz Game</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <div class="question_part">
+            <div class="question_text">
+                <!-- I have inserted questions for javascript file-->
+            </div>
+            <div class="option_list">
+                <!-- I have inserted options for javascript file-->
+            </div>
+        </div>
+
+        <footer>
+            <div class="total_que">
+                <!--<span><b>1</b>Of<b>10</b>Questions</span>-->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+    <!--Result box-->
+    <div class="result_box" id="qz">
+        <div class="icon">
+            <img src="images/trophy-removebg-preview.png" alt="">
+        </div>
+        <div class="complete_text">You completed the quiz successfully!!</div>
+        <div class="score_text"></div>
+
+        <div class="buttons">
+            <button class="restart">Start Again</button>
+            <button class="quit">Exit Quiz</button>
+        </div>
+
+    </div>
+    <div class="right">
+        <button class="btn4" onclick="viewProfile();">View Editor</button>
+    </div>
+            <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <h3>EXPLORE SERENDIB</h3>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <p>The real voyage of discovery consists not in seeking new landscapes but in having new eyes.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Explore Serendib. designed by <span>kaushala fernando</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script>
+        function viewProfile(){
+                window.location = "kaushala.html"
+        }
+    </script>
+
+</body>
+</html>
